@@ -1,0 +1,18 @@
+.wrapper{
+    width: 1100px;
+    display:flex;
+    flex-direction: column;
+    min-height: 100%;
+    margin: auto;
+};
+
+.wrapper_footer{
+    width: 1100px;
+    display:flex;
+    flex-direction: column;
+    min-height: 100%;
+    margin: auto;
+};
+
+
+
