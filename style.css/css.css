@@ -51,11 +51,7 @@ html{
     width: 50px;
 }
 
-li.nav_mainMenu,.nav_matirial,.nav_me, .nav_review {
-    text-decoration: none;
-    color: black;
-    font-size: larger;
-    list-style-type: none;
+.nav{
+    display: inline-block; 
+    margin-right: -0.25em;
 }
-
-
