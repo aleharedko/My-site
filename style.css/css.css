@@ -4,7 +4,7 @@ html{
     height: 100%;
     margin: 0;
     padding: 0;
-    background: url(/image/1618576150_17-phonoteka_org-p-fon-nebo-s-oblakami-dlya-fotoshopa-23.jpg), no-repeat;
+    background: url(/image/1618576150_17-phonoteka_org-p-fon-nebo-s-oblakami-dlya-fotoshopa-23.jpg),no-repeat ;
     background-size: 100%
 }
  
@@ -47,11 +47,23 @@ html{
     border: 2px solid black;
 }
 
+.nav{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
 .imgFooter{
     width: 50px;
 }
 
-.nav{
-    display: inline-block; 
-    margin-right: -0.25em;
-}
+a.navItem:visited, a.navItem:focus, a.navItem:hover {
+    color: #fff;
+  }
+
+  .navItem{
+    text-decoration: none;
+    list-style-type: none;
+  }
