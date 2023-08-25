@@ -4,9 +4,11 @@ html{
     height: 100%;
     margin: 0;
     padding: 0;
-    background: url(/image/1618576150_17-phonoteka_org-p-fon-nebo-s-oblakami-dlya-fotoshopa-23.jpg),no-repeat ;
+    background: url(/image/flat-lay-photo-of-office-desk-with-laptop-copy-space-background.jpg) no-repeat ;
+    background-attachment: fixed;
     background-size: 100%;
     font-family: 'Lora', serif;
+    background-color: rgb(238, 237, 237);
 }
  
 .wrapper{
@@ -15,8 +17,6 @@ html{
     flex-direction: column;
     min-height: 100%;
     margin: auto;
-    background-color: rgb(165, 165, 225);
-    border: 2px solid black;
     font-size: 20px;
 }
 
@@ -30,14 +30,12 @@ html{
     display:flex;
     flex-direction: column;
     margin-top: 5px;
-    background-color: rgb(156, 234, 193);
-    border: 2px solid black;
 }
 
 .imgMain{
     width: 800px;
     height: auto;
-    margin-left: 0px;
+    padding-top: 20px;
 }
 
 .wrapperFooter{
@@ -47,16 +45,14 @@ html{
     justify-content: space-around;
     align-items: center;
     min-height: 100%;
-   /* margin-top: 5px;*/
     margin: auto;
-    background-color: rgb(255, 242, 0);
-    border: 2px solid black;
     font-size: 20px;
 }
 
-.contacts{
-    background-color: rgb(244, 149, 128);
-    border: 2px solid black;
+.mainText{
+    width: 1000px;
+    align-items: stretch;
+    margin-left: 125px;
 }
 
 .nav{
@@ -75,12 +71,24 @@ html{
 }
 
 a.navItem:visited, a.navItem:focus, a.navItem:hover {
-    color: #fff;
+    color: #000;
   }
 
 .navItem{
     text-decoration: none;
     list-style-type: none;
+    font-size: 30px;
+    text-shadow: 2px -4px 5px green;
+}
+
+a.linMainText:visited, a.linMainText:focus, a.linMainText:hover {
+    color: #000;
+  }
+
+
+.linMainText{
+    color: #000;
+    text-decoration: none;
 }
 
 .footerLink{
@@ -115,4 +123,42 @@ a.navItem:visited, a.navItem:focus, a.navItem:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-shadow: 2px -3px 4px green;
+}
+
+@media (min-width: 992px){
+ .aside {
+      flex: 0 0 33.333333%;
+      max-width: 33.333333%;
+      order: 1;
+    }
+}
+   
+@media (min-width: 1400px){
+    .aside {
+      flex: 0 0 25%;
+      max-width: 25%;
+    }
+}
+
+ @media (min-width: 320px) {
+        .aside {
+          flex: 0 0 33.333333%;
+          max-width: 33.333333%;
+          order: 1;
+        }
+}
+
+.matirialContainerImg{
+    margin-bottom: 40px;
+}
+
+a.matirialContainerImg:visited, a.matirialContainerImg:focus, a.matirialContainerImg:hover {
+    color: #000;
+  }
+
+
+.matirialContainerImg{
+    color: #000;
+    text-decoration: none;
 }

@@ -1,19 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <<!DOCTYPE html>
-    <html lang="en">
+
+    <!DOCTYPE html>
+    <html lang="ru">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="/style.css/css.css" rel="stylesheet" type="text/css">
         <link rel="icon" href="/image/favicon.png" type="image/x-icon">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Open+Sans:ital@0;1&display=swap" rel="stylesheet">    <title>Document</title>
@@ -36,7 +29,7 @@
     
                 <nav class="nav">
     
-                    <div><a class="navItem" href="/html_review.html">Главная</a></div>
+                    <div><a class="navItem" href="/html_main.html">Главная</a></div>
                     <div><a class="navItem" href="/html_matirial.html">Материалы</a></div>
                     <div><a class="navItem" href="/html_blog.html">Блог</a></div>
                     <div><a class="navItem" href="/html_me.htm">О авторе</a></div>
@@ -46,12 +39,38 @@
             </header>
     
             <main class="mainWrapper">
-    
+                <style>
+                    .container{
+                       display: grid;
+                        grid-template-columns: repeat(2, 2fr);
+                        grid-template-rows: repeat(2,2fr);
+                    }
+                </style>
+            
+                <div class="container">
+                    <div class="page_matirial"> 
+                        <a class="" href="/html_presentation.html"  title="Презентации"> Презентации
+                         <img class="matirialContainerImg" alt="Презентации" src="/image/prezentation.png">
+                        </a>
+                    </div>
+
+                    <div class="page_matirial"><a class="" href="/html_robototeh.html" title="Робототехника" > Робототехника
+                        <img  class="matirialContainerImg" alt="Робототехника"src="/image/robototehnika.png"></a>
+                    </div>
+
+                    <div class="page_matirial"><a class="" href="/html_ecologic.html" title="Экология" > Экология
+                        <img class="matirialContainerImg" alt="Экология" src="/image/eco.png">
+                    </a>
+                    </div>
+
+                    <div class="page_matirial"><a class="" href="/programming.html" title="Программирование" > Программирование
+                        <img class="matirialContainerImg" alt="Программирование" src="/image/programing.png">
+                    </a>
+                    </div>
+                </div>
             </main>   
     
         </body>
-     
-    </body>
     <footer class="wrapperFooter">    
             
         <div>
@@ -67,35 +86,3 @@
     
     </footer>
     </html>
-</head>
-<body>
-    <style>
-        .container{
-            display: grid;
-            grid-template-columns: repeat(2, 2fr);
-            grid-template-rows: repeat(2,2fr);
-        }
-
-        .page_matirial{
-            border: 2px dashed black;
-            background-color: rgb(198, 239, 225);
-        
-        }
-    </style>
-
-    <div class="container">
-        <div class="page_matirial">1
-            <img src="">
-        </div>
-        <div class="page_matirial">2
-            <img src="">
-        </div>
-        <div class="page_matirial">3
-            <img src="">
-        </div>
-        <div class="page_matirial">4
-            <img src="">
-        </div>
-    </div>
-</body>
-</html>
