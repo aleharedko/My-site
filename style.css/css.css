@@ -34,6 +34,12 @@ html{
     border: 2px solid black;
 }
 
+.imgMain{
+    width: 800px;
+    height: auto;
+    margin-left: 0px;
+}
+
 .wrapperFooter{
     width: 1200px;
     display:flex;
@@ -101,6 +107,12 @@ a.navItem:visited, a.navItem:focus, a.navItem:hover {
     border: 3px solid white;    
     border-radius: 100px;  
     box-shadow: 0 0 7px #666;
-    width: 120px;
+    width: 200px;
 }
 
+.headerHeader{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
