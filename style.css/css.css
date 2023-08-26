@@ -150,15 +150,27 @@ a.linMainText:visited, a.linMainText:focus, a.linMainText:hover {
 }
 
 .matirialContainerImg{
-    margin-bottom: 40px;
+    margin: 40px 0px 40px 0px;
 }
 
 a.matirialContainerImg:visited, a.matirialContainerImg:focus, a.matirialContainerImg:hover {
-    color: #000;
-  }
+    color: #000; 
+}
 
+a.matirialContainerImg:visited, a.matirialContainerImg:focus, a.matirialContainerImg:hover {
+    color: #000; 
+}
 
-.matirialContainerImg{
+.matirialContainerImg, .pageMatirialText{
     color: #000;
     text-decoration: none;
+    font-size: larger;
 }
+
+.page_matirial{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
