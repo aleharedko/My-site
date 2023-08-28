@@ -82,13 +82,13 @@ a.navItem:visited, a.navItem:focus, a.navItem:hover {
 }
 
 a.linMainText:visited, a.linMainText:focus, a.linMainText:hover {
-    color: #000;
+    color: green;
   }
 
 
 .linMainText{
-    color: #000;
     text-decoration: none;
+   /* background-color: rgb(39, 137, 7);*/
 }
 
 .footerLink{
@@ -173,4 +173,3 @@ a.matirialContainerImg:visited, a.matirialContainerImg:focus, a.matirialContaine
     align-items: center;
     justify-content: space-evenly;
 }
-
