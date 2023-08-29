@@ -173,3 +173,14 @@ a.matirialContainerImg:visited, a.matirialContainerImg:focus, a.matirialContaine
     align-items: center;
     justify-content: space-evenly;
 }
+
+img.myFoto{
+    width: 400px;
+    float: right;
+    margin-left: 40px;
+}
+
+p.greetingsMe{
+    display: flex;
+    justify-content:center;
+}
