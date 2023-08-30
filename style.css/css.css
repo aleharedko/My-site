@@ -184,3 +184,17 @@ p.greetingsMe{
     display: flex;
     justify-content:center;
 }
+
+hr{
+    color: green;
+    size: 60px;
+}
+
+
+.fotoMeExample{
+    width: 220px;
+}
+
+img.fotoMeExample:focus, img.fotoMeExample:hover {
+    width: 500px;
+}
