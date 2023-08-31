@@ -4,7 +4,7 @@ html{
     height: 100%;
     margin: 0;
     padding: 0;
-    background: url(/image/flat-lay-photo-of-office-desk-with-laptop-copy-space-background.jpg) no-repeat ;
+    background: url(/image/colorful-compostion-with-watercolor-brushstrokes.jpg) no-repeat ;
     background-attachment: fixed;
     background-size: 100%;
     font-family: 'Lora', serif;
@@ -180,21 +180,82 @@ img.myFoto{
     margin-left: 40px;
 }
 
-p.greetingsMe{
+h3.greetingsMe{
     display: flex;
     justify-content:center;
+   /* color: green;*/
 }
 
 hr{
-    color: green;
-    size: 60px;
+    border: none;
+    background-color: green;
+    height: 3px;
 }
 
 
-.fotoMeExample{
+/*.fotoMeExample{
     width: 220px;
 }
 
 img.fotoMeExample:focus, img.fotoMeExample:hover {
     width: 500px;
+}*/
+
+.slideShow-container{
+    max-width: 400px;
+    position: relative;
+    margin: auto;
+}
+
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover{
+    background-color: rgb(0,0,0, 0.8);
+}
+
+.dot{
+    cursor: pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #898484;
+    border-radius: 50%;
+    display: inline-block;
+    transition: 0.6s ease;
+}
+
+ .dot:hover{
+    background-color: #2f2d2d;
+}
+
+.fade{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade{
+    form{opacity: 4}
+    to{opacity: 1}
+}
+@keyframes fade{
+    form{opacity: 4}
+    to{opacity: 1}
 }
