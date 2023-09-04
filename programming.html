@@ -61,65 +61,102 @@
                 </p>
                 <p>Пример данног слайдера вы можете увидить ТУТ</p>
                 <p>Начнём с кода Html </p>
+                <hr>    
                 <pre>
                     <code>
-                    <hr>
-                    <div class="slideShow-container">
-                        <div class="mySlides fade">
-                            <img class="fotoMeExample" style="width: 100%;" src="/image/выставка.jpg" alt=""> 
-                        </div>
-                    
-                    
-                        <div class="mySlides fade">
-                            <img class="fotoMeExample" style="width: 100%;" src="/image/выставкаЭкокостюмы.jpg" alt="">
-                        </div>
-                    
-    
-                  
-                        <div class="mySlides fade">
-                            <img class="fotoMeExample" style="width: 100%;" src="/image/экомониторинг.jpg" alt="">
-                        </div>
-                    
-    
-                    
-                        <div class="mySlides fade">
-                            <img class="fotoMeExample" style="width: 100%;" src="/image/экомониторингДва.jpg" alt="">
-                        </div>
-                    
-    
-                   
-                        <div class="mySlides fade">
-                            <img class="fotoMeExample" style="width: 100%;" src="/image/экомдва.jpg" alt="">
-                        </div>
-                    
-    
-                   
-                        <div class="mySlides fade">
-                            <img class="fotoMeExample" style="width: 100%;" src="/image/экоэм.jpg" alt="">
-                        </div>
-                    
-                   
-                        <div class="mySlides fade">
-                            <img class="fotoMeExample" style="width: 100%;" src="/image/Эком.jpg" alt="">
-                        </div>
+                        <div class="slideShow-container">
+                            <div class="mySlides fade">
+                            </div>
+                            
+                            
+                            <div class="mySlides fade">
+                            </div>
+                            
+                            <img class="fotoMeExample" style="width: 100%;" src="" alt=""> 
+                            
+                            
+                            <div class="mySlides fade">
+                            </div>
+                            <img class="fotoMeExample" style="width: 100%;" src="" alt="">
+                            
+                            
+                            
+                            <div class="mySlides fade">
+                            </div>
+                            <img class="fotoMeExample" style="width: 100%;" src="" alt="">
+                            
+                            
+                            
+                            <div class="mySlides fade">
+                                <img class="fotoMeExample" style="width: 100%;" src="" alt="">
+                                <img class="fotoMeExample" style="width: 100%;" src="" alt="">
+                            </div>
                         
-                        <a class="prev" onclick="plusSlides(-1)"> &#10094</a>
-                        <a class="next" onclick="plusSlides(1)"> &#10095</a>
+        
                     
-                    </div>
-                    <br>
-    
-                    <div style="text-align: center;">
-                        <span class="dot active " onclick="currentSlider(1)"></span>
-                        <span class="dot active " onclick="currentSlider(2)"></span>
-                        <span class="dot active " onclick="currentSlider(3)"></span>
-                        <span class="dot active " onclick="currentSlider(4)"></span>
-                        <span class="dot active " onclick="currentSlider(5)"></span>
-                        <span class="dot active " onclick="currentSlider(6)"></span>
-                        <span class="dot active " onclick="currentSlider(7)"></span>
-                    </div>
-    
-                    <script src="/js.js"></script>
+                            <div class="mySlides fade">
+                                <img class="fotoMeExample" style="width: 100%;" src="" alt="">
+                            </div>
+                        
+                    
+                            <div class="mySlides fade">
+                                <img class="fotoMeExample" style="width: 100%;" src="" alt="">
+                            </div>
+                            
+                            <a class="prev" onclick="plusSlides(-1)"> &#10094</a>
+                            <a class="next" onclick="plusSlides(1)"> &#10095</a>
+                        
+                        </div>
+                        <br>
+        
+                        <div style="text-align: center;">
+                            <span class="dot active " onclick="currentSlider(1)"></span>
+                            <span class="dot active " onclick="currentSlider(2)"></span>
+                            <span class="dot active " onclick="currentSlider(3)"></span>
+                            <span class="dot active " onclick="currentSlider(4)"></span>
+                            <span class="dot active " onclick="currentSlider(5)"></span>
+                            <span class="dot active " onclick="currentSlider(6)"></span>
+                            <span class="dot active " onclick="currentSlider(7)"></span>
+                        </div>
+        
+                        <script src="/js.js"></script>
+                    </code>
+                </pre>
+
+                <h2>Код JS</h2>
+                <pre>
+                    <code>
+                        let slideIndex = 1;
+                        showSlides(slideIndex);
+
+                        function plusSlides(n){
+                            showSlides(slideIndex += n);
+                        }
+
+                        function currentSlide(n){
+                            showSlides(slideIndex = n);
+                        }
+
+                        function showSlides(n) {
+                            let i;
+                            let slides = document.getElementsByClassName("mySlides");
+                            let dots = document.getElementsByClassName("dot");
+
+                            if (n > slides.length) {
+                                slideIndex = 1
+                            }
+                            if (n < 1){
+                                slideIndex = slides.length
+                            }
+                            for (i=0; i < slides.length; i++){
+                                slides[i].style.display = "none";
+                            }
+                            for (i = 0; i < dots.length; i++){
+                                dots[i].className= dots[i].className.replace("actiive","");
+                            }
+                            slides[slideIndex-1].style.display = "block";
+                            dots[slideIndex-1].className += "active";
+                        }  
                     </code>
                 </pre>
             </div>
