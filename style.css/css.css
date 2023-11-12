@@ -4,15 +4,13 @@ html{
     height: 100%;
     margin: 0;
     padding: 0;
-    background: url(/image/colorful-compostion-with-watercolor-brushstrokes.jpg) no-repeat ;
     background-attachment: fixed;
     background-size: 100%;
     font-family: 'Lora', serif;
-    background-color: rgb(238, 237, 237);
 }
  
 .wrapper{
-    width: 1200px;
+    width: 1300px;
     display:flex;
     flex-direction: column;
     min-height: 100%;
@@ -49,7 +47,12 @@ html{
     font-size: 20px;
 }
 
+.secMainText{
+    background-color: rgb(238, 237, 237);
+}
+
 .mainText{
+    padding: 0px 60px;
     width: 1000px;
     align-items: stretch;
     margin-left: 125px;
@@ -59,9 +62,11 @@ html{
     display: flex;
     justify-content: space-around;
     width: 100%;
+    height: 100px;
     flex-wrap: wrap;
     align-items: center;
     margin-bottom: 20px;
+    background-color: rgb(238, 237, 237);
 }
 
 .imgFooter{
@@ -83,6 +88,7 @@ a.navItem:visited, a.navItem:focus, a.navItem:hover {
 
 a.linMainText:visited, a.linMainText:focus, a.linMainText:hover {
     color: green;
+    
   }
 
 
