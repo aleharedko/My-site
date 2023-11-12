@@ -4,18 +4,15 @@ html{
     height: 100%;
     margin: 0;
     padding: 0;
-    background-attachment: fixed;
-    background-size: 100%;
     font-family: 'Lora', serif;
 }
  
 .wrapper{
-    width: 1300px;
     display:flex;
     flex-direction: column;
     min-height: 100%;
     margin: auto;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .head{
@@ -44,15 +41,15 @@ html{
     align-items: center;
     min-height: 100%;
     margin: auto;
-    font-size: 20px;
+    font-size: 15px;
 }
 
-.secMainText{
+.secText{
     background-color: rgb(238, 237, 237);
 }
 
-.mainText{
-    padding: 0px 60px;
+.generalText{
+    padding: 60px 60px;
     width: 1000px;
     align-items: stretch;
     margin-left: 125px;
@@ -82,7 +79,7 @@ a.navItem:visited, a.navItem:focus, a.navItem:hover {
 .navItem{
     text-decoration: none;
     list-style-type: none;
-    font-size: 30px;
+    font-size: 20px;
     text-shadow: 2px -4px 5px green;
 }
 
