@@ -80,7 +80,6 @@ a.navItem:visited, a.navItem:focus, a.navItem:hover {
     text-decoration: none;
     list-style-type: none;
     font-size: 20px;
-    text-shadow: 2px -4px 5px green;
 }
 
 a.linMainText:visited, a.linMainText:focus, a.linMainText:hover {
@@ -127,7 +126,6 @@ a.linMainText:visited, a.linMainText:focus, a.linMainText:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-shadow: 2px -3px 4px green;
 }
 
 @media (min-width: 992px){
@@ -195,15 +193,6 @@ hr{
     background-color: green;
     height: 3px;
 }
-
-
-/*.fotoMeExample{
-    width: 220px;
-}
-
-img.fotoMeExample:focus, img.fotoMeExample:hover {
-    width: 500px;
-}*/
 
 .slideShow-container{
     max-width: 400px;
