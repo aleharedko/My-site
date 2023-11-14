@@ -44,15 +44,23 @@ html{
     font-size: 15px;
 }
 
-.secText{
-    background-color: rgb(238, 237, 237);
+.secTextPreview{
+    background-color: #aa9e4e;
+    display: flex;
+    align-items: center;
+}
+
+.imgGifSecTextPreview{
+    margin: 60px;
 }
 
 .generalText{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     padding: 60px 60px;
-    width: 1000px;
-    align-items: stretch;
-    margin-left: 125px;
+    padding: 10px;
+    border: aliceblue;
 }
 
 .nav{
@@ -62,9 +70,11 @@ html{
     flex-wrap: wrap;
     margin-bottom: 20px;
     margin-top: 70px;
-    background-color: rgb(238, 237, 237);
+    background-color: #a48f84;
     align-content: center;
     align-items: center;
+    justify-content: center;
+    font-weight: 600;
 }
 
 .textNav{
@@ -89,9 +99,12 @@ a.navItem:visited, a.navItem:focus, a.navItem:hover {
     margin-left: 30px;
 }
 
+.linMainText{
+    font-weight: 600;
+}
+
 a.linMainText:visited, a.linMainText:focus, a.linMainText:hover {
     color: green;
-    
   }
 
 
@@ -102,7 +115,7 @@ a.linMainText:visited, a.linMainText:focus, a.linMainText:hover {
 }
 
 .maininformationImgMain{
-    isplay: flex;
+    display: flex;
     align-items: center;
     flex-direction: column;
 }
