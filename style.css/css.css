@@ -51,16 +51,15 @@ html{
 }
 
 .imgGifSecTextPreview{
-    margin: 60px;
+    margin: 30px;
 }
 
 .generalText{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    padding: 60px 60px;
-    padding: 10px;
-    border: aliceblue;
+    padding: 30px;
+    
 }
 
 .nav{
