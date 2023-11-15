@@ -119,6 +119,24 @@ a.linMainText:visited, a.linMainText:focus, a.linMainText:hover {
     flex-direction: column;
 }
 
+.mainLinkOnPageMatirial{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainLinkOnPageBlog{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #404040;
+}
+
+.mainLinkOnPageMatirialImg,  .mainLinkOnPageMatirialText, .mainLinkOnPageBlogImg, .mainLinkOnPageBlogText{
+    margin: 30px;
+}
+
 .footerLink{
     display: flex;
     align-items: stretch;
